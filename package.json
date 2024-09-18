@@ -1,15 +1,17 @@
 {
   "name": "react-calculator",
+  "homepage": "https://pekpytxd.github.io/react-calculator",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
-  "homepage": "https://pekpytxd.github.io/react-calculator",
   "dependencies": {
     "autoprefixer": "^10.4.20",
     "mathjs": "^13.1.1",
